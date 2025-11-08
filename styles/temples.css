@@ -1,0 +1,83 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(114, 82, 63);
+  color: #fff;
+  padding: 15px;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.active {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: x-large;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(32, 8, 1);
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(241, 237, 232);
+    color: rgb(44, 26, 2);
+    opacity: 0.9;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(114, 82, 63);
+    color: #fff;
+}
