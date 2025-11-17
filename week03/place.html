@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Refiloe Moeta">
+    <meta name="description" content=" WDD 131 - My Favorite Place">
+    <title> WDD 131 - Favorite Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+  <h1>Cape Town, South Africa</h1>
+  <img 
+    src="images/cape-town.webp" 
+    srcset="images/cape-town.webp 800w,
+            images/cape-town.webp 480w"
+    sizes="100vw"
+    alt="Hero image">
+</header>
+    <main class="grid-layout">
+        <section class="info-box">
+            <h2>Data</h2>
+          <p>Area: 2,461 km²</p>
+          <p>Population: 5,064,000</p>
+          <p>Languages: English, Afrikaans</p>
+          <p>Currency: Rand</p>
+          <p>Time Zone: GMT+2</p>
+          <P>Calling Code: +27</P>
+          <p>Internet TLD: .za</p>
+        </section>
+
+        <section class="info-box weather">
+            <h2 class="weather heading">Weather 🌤️</h2>
+            <div class="weather-icon">
+            <img src="images/thermo.svg" alt="temperature icon">
+            </div>
+            <p>Temperature: 12&degC</p>
+            <p>Conditions: Cloudy</p>
+            <p>Wind: 3 km/h</p>
+            <p id="windchillValue">Wind Chill: Calculating...</p>
+        </section>
+    </main>
+    <footer><p>©️ <span id="currentyear">2025</span> Refiloe Moeta 👩‍💻 South Africa</p>
+    <p id="lastmodified"></p></footer>
+</body>
+</html>
