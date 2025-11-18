@@ -1,0 +1,130 @@
+:root {
+  --font-main: 'Arial', sans-serif;
+  --bg-color: #f4f4f4;
+  --header-bg: black;
+  --text-light: #fcfcf9;
+  --box-bg: rgba(10, 38, 196, 0.9);
+  --box-border: 2px dashed #333;
+  --box-padding: 20px;
+  --weather-icon-size: 80px;
+  --heading-size: 1.5rem;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+header.hero {
+  position: relative;
+  background-color: var(--header-bg);
+  color: var(--text-light);
+  text-align: center;
+  padding: var(--box-padding);
+}
+
+header.hero h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: var(--header-bg);
+  color: var(--text-light);
+  z-index: 2;
+  position: relative;
+}
+
+.info-box {
+    background-color: var(--header-bg);
+    border: 1px solid;
+    border-radius: 10px;
+    opacity: 0.8;
+    padding: 15px;
+    width: fit-content;
+    padding-top: 1px;
+    color: var(--bg-color);
+}
+
+.info-box h2 {
+    color: var(--bg-color);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.info-box p {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.info-box.weather {
+    position: fixed;
+    bottom: 10px;   
+    right: 20px;    
+    z-index: 1000;
+    width: fit-content;
+    padding: 20px;
+    background-color: var(--header-bg);
+    color: var(--bg-color);
+    border-radius: 10px;
+}
+
+
+header.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+main {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 90%;
+  z-index: 2;
+}
+
+main > div,
+.mobile.weather {
+  background-color: var(--box-bg);
+  border: var(--box-border);
+  padding: var(--box-padding);
+}
+
+.wide.weather::after {
+  content: "";
+}
+
+@media (min-width: 600px) {
+  .weather-icon img {
+    display: none;
+  }
+
+
+  .wide.weather::after {
+    content: " 🌤️";
+    font-size: var(--heading-size);
+    margin-left: 8px;
+  }
+}
+
+.mobile.weather img {
+  width: var(--weather-icon-size);
+  height: var(--weather-icon-size);
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 0; 
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  background-color: var(--header-bg);
+  padding-top: 20px;
+}
