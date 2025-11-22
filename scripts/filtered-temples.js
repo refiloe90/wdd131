@@ -109,7 +109,7 @@ const temples = [
     templeName: "Accra Ghana",
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
-    area: 1750,
+    area: 17501,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-758797-wallpaper.jpg"
   }
