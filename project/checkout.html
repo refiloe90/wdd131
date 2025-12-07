@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Refiloe Moeta">
+    <meta name="description" content="Website Project for WDD 131">
+    <title>WDD 131 - Final Project</title>
+    <link rel="stylesheet" href="styles/final-project.css">
+</head>
+<body>
+  <header class="header-bar">
+    <h1>Checkout</h1>
+  </header>
+
+  <main>
+    <section id="checkout-summary">
+      <h2>Order Summary</h2>
+      <div id="summary-items"></div>
+      <p id="summary-total"></p>
+    </section>
+
+    <form class="checkout-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <button type="submit">Place Order</button>
+
+      <a href="cart.html" class="back-btn">← Back to Cart</a>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>©️ <span id="currentyear">2025</span> Refiloe Moeta 👩‍💻 South Africa</p>
+  </footer>
+
+  <script src="scripts/checkout.js" defer></script>
+</body>
+</html>

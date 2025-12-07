@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Refiloe Moeta">
+  <meta name="description" content="Website Project for WDD 131">
+  <title>WDD 131 - Final Project</title>
+  <link rel="stylesheet" href="styles/final-project.css">
+</head>
+<body>
+
+  <header class="header-bar">
+    <img src="images/centletics1.png" alt="Centletics Logo" loading="lazy">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="final-project.html">Home</a></li>
+      <li><a href="female.html">Female</a></li>
+      <li><a href="male.html">Male</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-info">
+    <h1>Centletics</h1>
+    <p>
+      127 Woburn Avenue <br>
+      Benoni <br>
+      1500 <br>
+      +27 73 885 2045 <br>
+      info@centletics.com
+    </p>
+  </div>
+
+  <section class="client-info">
+    <div class="map-form-container">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4246.684975104316!2d28.305804111728122!3d-26.194030163465605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953d7affaa0ec3%3A0x9e823336e1135de2!2s127%20Woburn%20Ave%2C%20Benoni%2C%20Johannesburg%2C%201500!5e1!3m2!1sen!2sza!4v1759604763671!5m2!1sen!2sza"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <form class="client-form">
+        <fieldset>
+          <label for="Q1">Name:</label>
+          <input type="text" name="Q1" id="Q1" placeholder="John Doe">
+
+          <label for="Q2">Email:</label>
+          <input type="email" name="Q2" id="Q2" placeholder="johndoe@email.com">
+
+          <div class="radio-row">
+            <span class="label">Message Purpose</span>
+          </div>
+
+          <label><input type="radio" name="Q3" value="General Inquiry"> General Inquiry</label>
+          <label><input type="radio" name="Q3" value="Product Enquiry"> Product Enquiry</label>
+          <label><input type="radio" name="Q3" value="Website Suggestion"> Website Suggestion</label>
+
+          <label for="Message">Message:</label>
+          <textarea name="Message" id="Message" rows="4" placeholder="Type message here"></textarea>
+
+          <label><input type="checkbox"> Please subscribe me to the monthly newsletter</label>
+
+          <button type="submit">Submit Message</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+<footer>
+    <p>©️ <span id="currentyear">2025</span> Refiloe Moeta 👩‍💻 South Africa</p>
+    <p id="lastmodified"></p>
+
+    <div class="social-icons">
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook logo" loading="lazy">
+      </a>
+      <a href="https://tiktok.com">
+        <img src="images/tiktok.png" alt="Tiktok logo" loading="lazy">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram logo" loading="lazy">
+      </a>
+    </nav>
+  </div>
+  </footer>
+    <script src="scripts/final-project.js" defer></script>
+</body>
+</html>
